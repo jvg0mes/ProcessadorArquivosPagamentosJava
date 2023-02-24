@@ -15,7 +15,7 @@ public class App {
         var pagamentos = pagamentoDao.getListaPagamentos();
         List<Thread> threads = new ArrayList<>();
 
-        int pagamentosPorThread = 2;
+        int pagamentosPorThread = 1;
         
         List<List<Pagamento>> listaDeListas = new ArrayList<List<Pagamento>>();
         for (int i = 0; i < pagamentos.size(); i += pagamentosPorThread) {
